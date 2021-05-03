@@ -74,7 +74,7 @@ while True:
     if ret==False:
         continue
 
-    faces=face_cascade.detectMultiScale(frame,1.3,5)
+    faces=face_cascade.detectMultiScale(frame,1.10,5)
 
     for face in faces:
         x,y,w,h=face

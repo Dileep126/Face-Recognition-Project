@@ -21,7 +21,7 @@ while True:
     gray_frame=cv2.cvtColor(frame,cv2.COLOR_BGR2GRAY)
 
 
-    faces=face_cascade.detectMultiScale(frame,1.3,5)
+    faces=face_cascade.detectMultiScale(frame,1.10,5)
     faces=sorted(faces,key=lambda f:f[2]*f[3])
 
     #Pick the last face (because it is the largest face according to area(f[2]*f[3]))
